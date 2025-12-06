@@ -39,11 +39,11 @@ export const DashboardLayout = () => {
 
   return (
     <div className="flex h-screen overflow-hidden">
-      {/* Sidebar for desktop */}
-      <aside className="hidden lg:flex lg:flex-col lg:w-64 glass-card border-r border-white/10">
+      {/* Sidebar for desktop - Web 5.0 Glassmorphic */}
+      <aside className="hidden lg:flex lg:flex-col lg:w-64 glass-card-heavy border-r border-white/10 shadow-glass">
         {/* Logo */}
-        <div className="flex items-center gap-3 h-16 px-6 border-b border-white/10">
-          <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
+        <div className="flex items-center gap-3 h-16 px-6 border-b border-white/10 backdrop-blur-xl">
+          <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center shadow-lg">
             <TrendingUp className="w-5 h-5 text-white" />
           </div>
           <span className="text-xl font-bold text-gradient-primary">CreditVision</span>
@@ -61,8 +61,8 @@ export const DashboardLayout = () => {
                 className={cn(
                   'flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-300',
                   isActive
-                    ? 'glass-card-heavy glow-primary text-foreground'
-                    : 'text-muted-foreground hover:glass-card-light hover:text-foreground'
+                    ? 'glass-card-heavy glow-primary text-foreground shadow-lg'
+                    : 'text-muted-foreground hover:glass-card-light hover:text-foreground hover:shadow-md'
                 )}
               >
                 <Icon className="w-5 h-5" />
@@ -73,10 +73,10 @@ export const DashboardLayout = () => {
         </nav>
 
         {/* User profile */}
-        <div className="p-4 border-t border-white/10">
-          <div className="glass-card-light p-3 rounded-xl">
+        <div className="p-4 border-t border-white/10 backdrop-blur-xl">
+          <div className="glass-card-light p-3 rounded-xl hover:glass-card transition-all duration-300">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full gradient-primary flex items-center justify-center text-sm font-bold text-white">
+              <div className="w-10 h-10 rounded-full gradient-primary flex items-center justify-center text-sm font-bold text-white shadow-lg">
                 CF
               </div>
               <div className="flex-1 min-w-0">
