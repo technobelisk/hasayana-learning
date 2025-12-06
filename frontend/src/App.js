@@ -10,6 +10,7 @@ import { PartnerAnalytics } from '@/pages/PartnerAnalytics';
 import { InvoiceExplorer } from '@/pages/InvoiceExplorer';
 import { RiskInsights } from '@/pages/RiskInsights';
 import { ReportsExports } from '@/pages/ReportsExports';
+import { DataPipeline } from '@/pages/DataPipeline';
 
 function App() {
   return (
