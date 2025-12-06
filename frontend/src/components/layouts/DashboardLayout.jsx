@@ -163,10 +163,10 @@ export const DashboardLayout = () => {
       {sidebarOpen && (
         <div className="fixed inset-0 z-50 lg:hidden">
           <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={() => setSidebarOpen(false)} />
-          <aside className="absolute left-0 top-0 bottom-0 w-64 glass-card-heavy border-r border-white/10">
+          <aside className="absolute left-0 top-0 bottom-0 w-64 glass-card-heavy border-r border-white/10 shadow-glass backdrop-blur-xl">
             {/* Logo */}
             <div className="flex items-center gap-3 h-16 px-6 border-b border-white/10">
-              <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
+              <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center shadow-lg">
                 <TrendingUp className="w-5 h-5 text-white" />
               </div>
               <span className="text-xl font-bold text-gradient-primary">CreditVision</span>
@@ -185,8 +185,8 @@ export const DashboardLayout = () => {
                     className={cn(
                       'flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-300',
                       isActive
-                        ? 'glass-card-heavy glow-primary text-foreground'
-                        : 'text-muted-foreground hover:glass-card-light hover:text-foreground'
+                        ? 'glass-card-heavy glow-primary text-foreground shadow-lg'
+                        : 'text-muted-foreground hover:glass-card-light hover:text-foreground hover:shadow-md'
                     )}
                   >
                     <Icon className="w-5 h-5" />
