@@ -23,6 +23,7 @@ function App() {
             <Route path="invoices" element={<InvoiceExplorer />} />
             <Route path="insights" element={<RiskInsights />} />
             <Route path="reports" element={<ReportsExports />} />
+            <Route path="pipeline" element={<DataPipeline />} />
           </Route>
         </Routes>
       </BrowserRouter>
