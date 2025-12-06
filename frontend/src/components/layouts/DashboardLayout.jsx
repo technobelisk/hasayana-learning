@@ -32,6 +32,7 @@ const navigation = [
   { name: 'Invoices', href: '/invoices', icon: FileText },
   { name: 'Risk Insights', href: '/insights', icon: TrendingUp },
   { name: 'Reports', href: '/reports', icon: FileBarChart },
+  { name: 'Data Pipeline', href: '/pipeline', icon: GitBranch },
 ];
 
 export const DashboardLayout = () => {
