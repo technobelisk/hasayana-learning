@@ -90,13 +90,13 @@ export const DashboardLayout = () => {
 
       {/* Main content area */}
       <div className="flex-1 flex flex-col overflow-hidden">
-        {/* Header */}
-        <header className="glass-card border-b border-white/10 h-16 flex items-center justify-between px-6 lg:px-8">
+        {/* Header - Web 5.0 Glassmorphic */}
+        <header className="glass-card-heavy border-b border-white/10 h-16 flex items-center justify-between px-6 lg:px-8 backdrop-blur-xl shadow-glass">
           {/* Mobile menu button */}
           <Button
             variant="ghost"
             size="icon"
-            className="lg:hidden"
+            className="lg:hidden hover:glass-card-light"
             onClick={() => setSidebarOpen(!sidebarOpen)}
           >
             {sidebarOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -109,7 +109,7 @@ export const DashboardLayout = () => {
               <Input
                 type="search"
                 placeholder="Search partners, invoices, insights..."
-                className="pl-10 glass-card-light border-white/10"
+                className="pl-10 glass-card-light border-white/10 focus:glass-card transition-all duration-300"
               />
             </div>
           </div>
